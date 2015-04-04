@@ -1,19 +1,41 @@
- extends layoutnoco
+extends layoutnoco
  
 block content
-	br
-	br
 	p Inscrivez-vous afin de faire partie de cette aventure ! -Dora L'exploratrice
 	br
+	
 	h3 Votre pseudo :
 	input(type='text', placeholder='Ex : Pasbesoindexemple')
+	
 	h3 Votre mot de passe :
 	input(type='password', placeholder='Ex : 0000')
+	
 	h3 Répéter mot de passe :
 	input(type='password')
+	
 	h3 Votre mail :
-	input(type='text', placeholder='Ex : mailpastropridicule@gmail.com')
+	input(type='email', placeholder='Ex : mailpastropridicule@gmail.com')
+	
+	br
+	h2 Infos personnelles :
+	br
+	
+	h3 Votre nom :
+	input(type='text')
+	
+	h3 Votre prénom :
+	input(type='text')
+	
+	h3 Votre sexe :
+	input(type='radio' name='sexe' value='Homme' id='Homme')
+	label(for='Homme') Homme
+	input(type='radio' name='sexe' value='Femme' id='Femme')
+	label(for='Femme') Femme
+	
+	h3 Votre âge :
+	input(type='number')
 	br
 	br
+	
 	a(href='/connexion')
-      input(type='button', value='Inscrivez-vous !')
+		input(type='button', value='Inscrivez-vous !')

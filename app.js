@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var connexion = require('./routes/connexion');
 var register = require('./routes/register');
+var accueil = require('./routes/accueil');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/connexion', connexion);
 app.use('/register', register);
+app.use('/accueil', accueil);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -62,3 +64,5 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+/*Lancer le serveur : DEBUG=minitwr:* ./bin/www */
