@@ -1,37 +1,36 @@
 doctype html
 html
-	head
-		title= title
-		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
-		link(rel='stylesheet', href='/stylesheets/layoutnoco.css')
-	body
-		.container
-			.row
-				.col-sm-12 
-					h1 Watcher
-  
-					
-	a(href='/connexion')
-		input(type='button', value='Connectez-vous')
-		
-	a(href='/register')
-		input(type='button', value='Inscrivez-vous')
-	
-	br
-	br
-	br
-	
-	block content
-	br
-	br
-	br
-	h3 Pour plus d'infos inutiles :
-	p Ne nous contactez surtout pas au : 36 65 65 65
-	p 14.50/min
-	h3 Les conquistador de jade
-	a(href='nathan.urbainlopes@gmail.com') Le bausse de l'aurteaugraffe
-	br
-	a(href='yanis.chibout@gmail.com') Le Rabzou aux pieds carrés
-	script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
-	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
-
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/layoutnoco.css')
+  body
+    .container
+      .row
+        .col-sm-12
+          h1 Watcher
+        .row
+          .col-sm-4.col-sm-offset-8
+              .btn-group
+                a.btn.btn-primary.btn-sm(href='/connexion')
+                  span.glyphicon.glyphicon-ok  Connexion
+                a.btn.btn-primary.btn-sm(href='/register') 
+                  span.glyphicon.glyphicon-remove  Inscription
+    
+    br
+    br
+    br
+    
+    block content
+    br
+    br
+    br
+    h3 Pour plus d'infos inutiles :
+    p Ne nous contactez surtout pas au : 36 65 65 65
+    p 14.50/min
+    h3 Les conquistador de jade
+    a(href='nathan.urbainlopes@gmail.com') Le bausse de l'aurteaugraffe
+    br
+    a(href='yanis.chibout@gmail.com') Le Rabzou aux pieds carrés
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
