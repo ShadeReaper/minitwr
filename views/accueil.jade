@@ -3,5 +3,10 @@ extends layoutco
 block content
 	br
 	br
-	textarea(name='tweet' id='tweet')
-	input(type='button', value='Envoyer !')
+	form(action='/accueil', method='POST')
+		textarea(name='tweet', rows=3, columns=50)
+		input(type='submit', content='Envoyer !')
+		
+	ul
+		- each tweet in tweets
+			li= tweet
