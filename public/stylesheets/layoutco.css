@@ -1,1 +1,25 @@
- 
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+	color: #FFFFFF;
+}
+
+.row {
+  background-color: #DCDCDC;
+  border: 2px solid white;
+  border-radius: 6px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #87CEFA;
+  border: 1px solid white;
+}
