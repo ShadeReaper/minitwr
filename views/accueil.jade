@@ -5,7 +5,7 @@ block content
   br
   br
   form(action='/accueil', method='POST')
-    textarea(name='tweet', rows=3, columns=50)
+    textarea(name='tweet', rows=2, cols=80, placeholder='Exprimez-vous, mais pas trop')
     input(type='submit', content='Envoyer !')
     
     - each tweet in tweets
