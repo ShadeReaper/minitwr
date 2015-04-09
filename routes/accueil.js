@@ -5,7 +5,7 @@ var tweets = [];
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('accueil', { title: 'Hauer', tweets: tweets });
+  res.render('accueil', { title: 'Watcher', tweets: tweets });
 });
 
 router.post('/', function(req, res, next) {

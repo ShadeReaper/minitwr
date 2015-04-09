@@ -1,0 +1,12 @@
+.tweet {
+	width:800px;
+	margin-left:50px;
+	margin-right:50px;
+	padding:10px;
+	background:#33CCFF;
+	border:1px solid #DDD;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+}
+
