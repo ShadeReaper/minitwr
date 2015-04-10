@@ -4,22 +4,39 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #707070;
 }
 
 h1 {
-	color: #FFFFFF;
+  color: #707070 ;
+}
+h4{
+color:#707070 ;
 }
 
-.row {
-  background-color: #DCDCDC;
+h3{
+color:#707070 ;
+}
+
+.header{
+  background-color: #C8C8C8;
   border: 2px solid white;
-  border-radius: 6px;
+  border-radius: 5px;
   line-height: 40px;
-  text-align: center;
+  text-align: center;}
+.footer{
+  background-color: #D0D0D0  ;
+  border: 2px solid white;
+  line-height: 40px;
+  text-align:justify;
+  border-radius: 5px;
 }
 
 .btn {
-  background-color: #87CEFA;
+  color :#707070 ;
+  background-color:#C8C8C8;
   border: 1px solid white;
 }
+
+p{
+	color:#707070 ;}
