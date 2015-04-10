@@ -1,15 +1,21 @@
 extends layoutnoco
 
 block content
-  br
-  br
-  h2 Connectez-vous pour contribuer à la connerie du site !
-  br
-  h4 Votre psuedo :
-  input(type='text', placeholder='spaceinvaders67')
-  h4 mot de passe :
-  input(type='password', placeholder='123456789')
-  br
-  br
-  a(href='/accueil')
-    input(type='button', value='Connectez-vous')
+	br
+	br
+	.container
+		.row
+			.cl-sm-8.col-sm-offset-1
+				h3 Connectez-vous pour contribuer à la connerie du site !
+				br
+				h4 Votre psuedo :
+				input(type='text', placeholder='spaceinvaders67')
+				h4 mot de passe :
+				input(type='password', placeholder='123456789')
+				br
+				br
+				a(href='/accueil')
+					input(type='button', value='Connectez-vous')
+		br
+		br
+		br
