@@ -5,11 +5,11 @@ block content
   br
   br
   form(action='/accueil', method='POST')
-    textarea(name='tweet', rows=2, cols=80, placeholder='Exprimez-vous, mais pas trop')
-    input(type='submit', content='Envoyer !')
+    textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
+    input(type='submit', content='Envoyer !' id="submit")
     
     - each tweet in tweets
-      h5 Un connecté a posté :
+      h4 Un connecté a posté :
       .tweet
         p= tweet
       br

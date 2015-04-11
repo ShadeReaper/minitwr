@@ -1,15 +1,19 @@
 .tweet {
-	width:800px;
+	width:1172px;
+	height:60px;
 	margin-left:50px;
-	margin-right:50px;
 	padding:10px;
-	background:#33CCFF;
-	border:1px solid #DDD;
+	background:#D3D3D3;
+	color:#FFFFFF;
+	border:1px solid #D3D3D3;
+	font-weight:900;
 	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
 }
 
 textarea {
-	border-radius: 15px;
+	border-radius: 5px;
+}
+
+#submit {
+	border-radius:5px;
 }
