@@ -1,15 +1,16 @@
 extends layoutco
 
 block content
-  link(rel='stylesheet', href='/stylesheets/accueil.css')
-  br
-  br
-  form(action='/accueil', method='POST')
-    textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
-    input(type='submit', content='Envoyer !' id="submit")
-    
-    - each tweet in tweets
-      h4 Un connecté a posté :
-      .tweet
-        p= tweet
-      br
+	link(rel='stylesheet', href='/stylesheets/accueil.css')
+	br
+	br
+	.container
+		form(action='/accueil', method='POST')
+			textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
+			input(type='submit', content='Envoyer !' id="submit")
+			
+			- each tweet in tweets
+				h4 Un connecté a posté :
+				.tweet
+					p= tweet
+				br
