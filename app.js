@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var connexion = require('./routes/connexion');
 var register = require('./routes/register');
 var accueil = require('./routes/accueil');
-
+var indexv2 = require('./routes/indexv2');
 var app = express();
 
 // view engine setup
@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', indexv2);
 app.use('/connexion', connexion);
 app.use('/register', register);
 app.use('/accueil', accueil);
