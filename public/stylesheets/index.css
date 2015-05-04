@@ -87,3 +87,15 @@ background-color:#E8E8E8;
 color:#FF9911;
 }
 
+input
+{
+border-radius: 15px;
+background-color:#FF9911;
+color:#E8E8E8;
+}
+
+input:hover
+{
+background-color:#E8E8E8;
+color:#FF9911;
+}

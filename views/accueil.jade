@@ -1,16 +1,32 @@
-extends layoutco
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/index.css')
+  body
+  //top barre
+  #navigation.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          h3.titre
+            span.glyphicon.glyphicon-eye-open  Watcher
+        .form.navbar-form.navbar-right
+          a.btn.btn-primary.btn-default(href='/')
+            span.glyphicon.glyphicon-user  Déconnexion
+  br
+  br
+  br
+  br
+  .container
+    h3.pied A vos Teewts ! 
+    form(action='/accueil', method='POST')
+      textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
+      br
+      input(type='submit', content='Envoyer !' id="submit")
 
-block content
-	link(rel='stylesheet', href='/stylesheets/accueil.css')
-	br
-	br
-	.container
-		form(action='/accueil', method='POST')
-			textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
-			input(type='submit', content='Envoyer !' id="submit")
-			
-			- each tweet in tweets
-				h4 Un connecté a posté :
-				.tweet
-					p= tweet
-				br
+      - each tweet in tweets
+        h4.pied Un connecté a posté :
+        .tweet
+          p= tweet
+        br
