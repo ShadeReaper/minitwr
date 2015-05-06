@@ -1,19 +1,114 @@
 .tweet {
-	width:1172px;
+	width:900px;
 	height:60px;
 	margin-left:50px;
 	padding:10px;
 	background:#FFFFFF ;
-	color:#B8B8B8;
-	border:1px solid #D0D0D0 ;
+	color:#606060;
+	border:2px outset #D0D0D0 ;
 	font-weight:900;
 	border-radius:5px;
+  word-wrap: break-word;
 }
 
 textarea {
 	border-radius: 5px;
+  width:900px;
+  height:70px; 
 }
 
 #submit {
 	border-radius:5px;
+}
+
+body
+{
+background-color:#FFFFFF;
+}
+
+p
+{
+color:#606060;
+}
+
+h3
+{
+color:#FF9911;
+}
+
+h4
+{
+color:#FF9911;
+}
+a
+{
+color:#505050;
+}
+
+a:hover
+{
+color:#FF9911;
+}
+.titre
+{
+color:#E8E8E8;
+}
+
+.presentation
+{
+color:#606060;
+}
+
+.form-control
+{
+background-color:#E8E8E8;
+}
+
+.btn-default
+{
+background-color:#FF9911;
+color:#E8E8E8;
+border:none;
+}
+
+.btn-default:hover
+{
+background-color:#E8E8E8;
+color:#FF9911;
+border:none;
+}
+
+.titre
+{
+color:#E8E8E8;
+}
+
+.navbar-default
+{
+background-color:#FF9911;
+}
+
+.btn-sm
+{
+border:none;
+background-color:#FF9911;
+color:#E8E8E8;
+}
+.btn-sm:hover
+{
+background-color:#E8E8E8;
+color:#FF9911;
+}
+
+input
+{
+border-radius: 15px;
+background-color:#FF9911;
+color:#E8E8E8;
+}
+
+input:hover
+{
+background-color:#E8E8E8;
+color:#FF9911;
 }
