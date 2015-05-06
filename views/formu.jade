@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/formu.css')
+  body
+  //top barre
+  #navigation.navbar.navbar-default.navbar-top
+      .container
+        .navbar-header
+          h3.titre
+            span.glyphicon.glyphicon-eye-open  Watcher
+        .form.navbar-form.navbar-right
+          input.form-control(type='text', placeholder='email')
+          input.form-control(type='password', placeholder='Password')
+          a.btn.btn-primary.btn-default(href='/accueil')
+            span.glyphicon.glyphicon-ok  Connexion
+  br
+  br
+  #contact
+    .container
+      .row
+        .col-lg-6
+          h3 Envie de nous raconter quelque chose ?
+          h4 Envoie un email ! 
+          br
+          form(role='form', action='mailto:nathan.urbainlopes@gmail.com', method='post', enctype='plain')
+            .form-group
+              label(for='name1') Ton blaze
+              input#name1.form-control(type='name', name='Name', placeholder='Monsieur nimportequi')
+            .form-group
+              label(for='email1') Ton email
+              input#email1.form-control(type='email', name='Mail', placeholder='monsieur.nimportequi67@msn.fr')
+            .form-group
+              label Va y exprime tes désirs, tu peux aussi nous signaler des problèmes              
+              textarea.form-control(name='Message', placeholder='Je me sens seul...' rows='3')
+              br
+              button.btn.btn-large(type='submit') 
+                span.glyphicon.glyphicon-send  Envoyer
+  #footer.navbar.navbar-default.navbar-fixed-bottom
+    .container
+      .row
+          .col-md-1
+            a(href='/') Retour
+          .col-md-3.col-md-offset-8
+            .citation
+              p ©2015 Watcher.Tous droits réservés
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
+            

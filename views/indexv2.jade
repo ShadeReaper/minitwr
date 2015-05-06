@@ -6,7 +6,7 @@ html
     link(rel='stylesheet', href='/stylesheets/index.css')
   body
   //top barre
-  #navigation.navbar.navbar-default.navbar-fixed-top
+  #navigation.navbar.navbar-default.navbar-top
       .container
         .navbar-header
           h3.titre
@@ -20,8 +20,6 @@ html
   #register
       br
       br
-      br
-      br
       .container
         .row
           .col-md-4
@@ -31,31 +29,39 @@ html
             br
             br
             .citation
-              p "Convivial est la société où l'homme contrôle l'outil."
+              p "Conviviale est la société où l'homme contrôle l'outil."
             p Ivan Illich
           .col-md-4.col-md-offset-3
             h2.presentation Inconnu au Bataillon ?
             h4.presentation Inscrit toi !
             br
             h5 Pseudo
-            input.form-control(type='text', placeholder='Licornedu67' class="txt")
+            input.form-control(type='text', placeholder='Licornedu67' , class="txt" maxlength='30')
             h5 Mot de passe
-            input.form-control(type='password', placeholder='666' class="txt")
+            input.form-control(type='password', placeholder='666' , class="txt" , maxlength='30')
             h5 Mail
-            input.form-control(type='email', placeholder='Ex : mailpastropridicule@gmail.com' class="txt")
+            input.form-control(type='email', placeholder='Ex : mailpastropridicule@gmail.com' class="txt" maxlength='30')
             br
             a.btn.btn-primary.btn-sm(href='/accueil')
               span.glyphicon.glyphicon-edit  Inscription
 
   #footer.navbar.navbar-default.navbar-fixed-bottom
       .container
-        h4.pied Infos inutiles
-          p Ne nous contactez surtout pas au : 36 65 65 65 
-          p 14.50/min 
-        h4.pied Les conquistador de jade
-        a(href='nathan.urbainlopes@gmail.com') Le bau(lo)sse de l'aurteaugraffe
-        br
-        a(href='yanis.chibout@gmail.com') Le Rabzou aux pieds carrés
+        .row
+          .col-md-6
+            h4.pied Infos inutiles
+            p Ne nous contactez surtout pas au : 36 65 65 65 
+            p Mais vous pouvez peut etre nous écrire si vous vous sentez obligé 
+            a(href='/formu') L'addresse tant convoité pour nous contacter
+          .col-md-6
+            h4.pied Les conquistador de jade
+            p Nathan Urbain : Designer,pro css / bootstrap, master des jeux de mots
+            p Yanis Chibout : Administrateur, pro javascript / jade, master du trolling
+        .row
+          .col-md-3.col-md-offset-9
+            .citation
+              p ©2015 Watcher.Tous droits réservés
+  
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
             

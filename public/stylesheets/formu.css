@@ -1,29 +1,9 @@
-.tweet {
-	width:900px;
-	height:60px;
-	margin-left:50px;
-	padding:10px;
-	background:#FFFFFF ;
-	color:#606060;
-	border:2px outset #D0D0D0 ;
-	font-weight:900;
-	border-radius:5px;
-  word-wrap: break-word;
-}
-
-textarea {
-	border-radius: 5px;
-  width:900px;
-  height:70px; 
-}
-
-#submit {
-	border-radius:5px;
-}
-
 body
 {
 background-color:#FFFFFF;
+background-image:url(/images/formu.jpg);
+background-repeat:no-repeat;
+background-position:right top;
 }
 
 p
@@ -33,13 +13,14 @@ color:#606060;
 
 h3
 {
-color:#FF9911;
+color:#606060;
 }
 
 h4
 {
-color:#FF9911;
+color:#606060;
 }
+
 a
 {
 color:#505050;
@@ -48,15 +29,6 @@ color:#505050;
 a:hover
 {
 color:#FF9911;
-}
-.titre
-{
-color:#E8E8E8;
-}
-
-.presentation
-{
-color:#606060;
 }
 
 .form-control
@@ -88,27 +60,19 @@ color:#E8E8E8;
 background-color:#FF9911;
 }
 
-.btn-sm
+.btn-large
 {
 border:none;
 background-color:#FF9911;
 color:#E8E8E8;
 }
-.btn-sm:hover
+.btn-large:hover
 {
 background-color:#E8E8E8;
 color:#FF9911;
 }
 
-input
-{
-border-radius: 15px;
-background-color:#FF9911;
-color:#E8E8E8;
-}
-
-input:hover
+#footer
 {
 background-color:#E8E8E8;
-color:#FF9911;
 }
