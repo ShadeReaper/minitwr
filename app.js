@@ -4,6 +4,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
 
 var accueil = require('./routes/accueil');
 var indexv2 = require('./routes/indexv2');
@@ -20,6 +22,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use('/', indexv2);
 app.use('/accueil', accueil);
@@ -57,5 +61,33 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+var users = {
+	'admin' : 'adminpass'
+}
+
+passport.use(new LocalStrategy({
+	usernameField: 'username',
+	passwordField: 'password'
+},
+function(username, password, done) {
+	if (users[username] != password) {
+		return done(null, false, {message : "Les informations entrées n'ont pas permis de vous authentifier"});
+	}
+	else {
+		return done(null, {username : username});
+	}
+}));
+
+passport.serializeUser(function(user, done) {
+  done(null, user.id);
+});
+
+passport.deserializeUser(function(username, done) {
+	if (users[username])
+		done(null, {username : username});
+	else
+		done(new Error("L'utilisateur" + username + "n'existe pas"));
+});
 
 /*Lancer le serveur : DEBUG=minitwr:* ./bin/www */
