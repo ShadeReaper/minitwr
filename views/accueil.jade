@@ -3,7 +3,7 @@ html
   head
     title= title
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/index.css')
+    link(rel='stylesheet', href='/stylesheets/accueil.css')
   body
   //top barre
   #navigation.navbar.navbar-default.navbar-fixed-top
@@ -21,12 +21,14 @@ html
   .container
     h3.pied A vos Teewts ! 
     form(action='/accueil', method='POST')
-      textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop')
+      textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop parce que limité a 142 caractères', maxlength='142')
       br
       input(type='submit', content='Envoyer !' id="submit")
 
       - each tweet in tweets
-        h4.pied Un connecté a posté :
+        h4.pied Un Watcher a posté :
         .tweet
           p= tweet
         br
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
