@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var accueil = require('./routes/accueil');
 var indexv2 = require('./routes/indexv2');
+var formu = require('./routes/formu');
 var app = express();
 
 // view engine setup
@@ -23,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexv2);
 app.use('/accueil', accueil);
+app.use('/formu', formu);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
