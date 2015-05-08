@@ -1,6 +1,9 @@
 body
 {
 background-color:#FFFFFF;
+background-image:url(/images/fond.png);
+background-repeat:no-repeat;
+background-position:right top;
 }
 
 p
