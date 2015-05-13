@@ -71,8 +71,18 @@ color:#E8E8E8;
 background-color:#E8E8E8;
 color:#FF9911;
 }
+@media screen and (max-width: 480px) 
+{
+#footer
+{
+display: none;
+}
+}
 
 #footer
 {
 background-color:#E8E8E8;
+position:fixed;
+width:100%;
+bottom:0px;
 }
