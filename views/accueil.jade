@@ -19,16 +19,20 @@ html
   br
   br
   .container
-    h3.pied A vos Teewts ! 
+    h3.pied A vos Tweets ! 
     form(action='/accueil', method='POST')
-      textarea(name='tweet', rows=4, cols=150, placeholder='Exprimez-vous, mais pas trop parce que limité a 142 caractères', maxlength='142')
+      input(type='text', name='pseudo', placeholder=' Un pseudo humiliant')
       br
-      input(type='submit', content='Envoyer !' id="submit")
+      br
+      textarea(name='tweet', rows=4, cols=150, placeholder="Exprime-toi mais pas trop on t'aime pas (lim : 142 car)", maxlength='142')
+      br
+      
+      input.submit(type='submit', content='Envoyer !' id="submit")
 
       - each tweet in tweets
-        h4.pied Un Watcher a posté :
+        h4.pied #{tweet.pseudo} a posté :
         .tweet
-          p= tweet
+          p= tweet.tpost
         br
   script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
