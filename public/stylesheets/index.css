@@ -83,6 +83,9 @@ color:#FF9911;
 #footer
 {
 background-color:#E8E8E8;
+position:fixed;
+width:100%;
+bottom:0px;
 }
 
 .pied
