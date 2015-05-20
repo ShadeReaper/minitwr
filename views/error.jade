@@ -1,1 +1,31 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/accueil.css')
+  body
+    .container
+      .row
+        .col-md-12
+          img.img-responsive(src='/images/erreur.png')
+       .row
+        .col-md-10
+         .err 
+           err A tu es comme ca, tu cherches la petite bête ?! On viens pas ici, l'erreur est humaine mais pas besoin de la montrer !
+
+       .row
+         .col-md-6.col-md-offset-3
+           h3 Retourne d'ou tu viens !
+       .row
+         .col-md-2.col-md-offset-3
+           a(href='/') Accueil
+         .col-md-2
+           a(href='accueil') Tweeter
+    .container
+      pre #{error.stack}
+
+  
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
 
