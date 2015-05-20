@@ -12,14 +12,13 @@ block content
           input.form-control(type='password', placeholder='Password')
           a.btn.btn-primary.btn-default(href='/accueil')
             span.glyphicon.glyphicon-ok  Connexion
-  br
-  br
+  //Formulaire
   #contact
     .container
       .row
         .col-sm-6
-          h3 Envie de nous raconter quelque chose ?
-          h4 Envoie un email ! 
+          h2.presentation Envie de nous raconter quelque chose ?
+          h3 Envoie un email ! 
           br
           form(role='form', action='mailto:nathan.urbainlopes@gmail.com', method='post', enctype='plain')
             .form-group
@@ -34,6 +33,7 @@ block content
               br
               button.btn.btn-default(type='submit') 
                 span.glyphicon.glyphicon-send  Envoyer
+  //Bas de page
   #footer
     .container
       .row

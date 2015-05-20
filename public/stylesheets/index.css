@@ -12,6 +12,11 @@ p
 color:#606060;
 }
 
+h3
+{
+color:#FF9911;
+}
+
 h5
 {
 color:#606060;
@@ -39,6 +44,7 @@ padding-bottom: 5 px;
 .navbar-default
 {
 background-color:#FF9911;
+padding-bottom: 7px;
 }
 
 .titre
