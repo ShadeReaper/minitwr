@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  //top barre
+  #navigation.navbar.navbar-default.navbar-top
+      .container
+        .navbar-header
+          h3.titre
+            span.glyphicon.glyphicon-eye-open  Watcher
+        .form.navbar-form.navbar-right
+          input.form-control(type='text', placeholder='email', name='mail')
+          input.form-control(type='password', placeholder='Password', name='password')
+          a.btn.btn-primary.btn-default(href='/accueil')
+            span.glyphicon.glyphicon-ok  Connexion
+  br
+  .container
+    .row
+      h3 Who are you ?
+    .row
+      .citation Nous somme tes pères ! Oh wait...
+    br
+    .row
+      p.presentation Nous sommes 2 étudiants de CMI à l'université de strasbourg :
+      h5 Nathan URBAIN : CMI spécialité Image, mail: nathan.urbain@etu.unistra.fr
+      h5 Yanis CHIBOUT : CMI spécialité Réseau, mail:
+    br
+    .row
+      h3 Pourquoi ce site ?
+      br
+      p.presentation Nous avions dans le cadre d'une UE: "Programmation Web", le projet de réalisé un site , où l'on puisse a la manière de twitter , bah ... twitter.
+    .row
+      p.presentation Bon on c'est beaucoup amusé quand même ! 
+    .row
+      .col.sm.5.col-md-offset-5
+        img.img-responsive(src='/images/contact.png')
+
+
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js')
