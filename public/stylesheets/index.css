@@ -86,12 +86,14 @@ background-color:#E8E8E8;
 position:fixed;
 width:100%;
 bottom:0px;
+opacity: 0.4;
 }
 
 @media screen and (max-width: 480px) 
 {
 #footer 
 {
+
 display: none;
 }
 }
@@ -113,6 +115,7 @@ input:hover
 background-color:#E8E8E8;
 color:#FF9911;
 }
+
 .tweet {
 	width:900px;
 	height:60px;
@@ -129,14 +132,29 @@ color:#FF9911;
 textarea {
 	border-radius: 5px;
   width:900px;
-  height:70px; 
+  height:70px;
+  -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 #submit {
+
 	border-radius:5px;
 }
 
 input
 {
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
 border-radius: 5px;
+}
+
+.row
+{
+padding-top: 10px;
+padding-bottom: 5 px;
 }

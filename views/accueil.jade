@@ -13,18 +13,19 @@ block content
   br
   br
   br
-  br
   .container
     h3.pied A vos Tweets ! 
     form(action='/accueil', method='POST')
-      input(type='text', name='pseudo', placeholder=' Un pseudo humiliant')
-      br
-      br
-      textarea(name='tweet', rows=4, cols=150, placeholder="Exprime-toi mais pas trop on t'aime pas (lim : 142 car)", maxlength='142')
-      br
-      
-      input.submit(type='submit', content='Envoyer !' id="submit")
-
+      .row
+        .col-sm-3
+          input(type='text', name='pseudo', placeholder=' Un pseudo humiliant')
+      .row
+        .col-sm-8
+          textarea(name='tweet', rows=4, cols=150, placeholder="Exprime-toi mais pas trop on t'aime pas (lim : 142 car)", maxlength='142')
+      .row
+        .col-sm-1
+          input.submit(type='submit', content='Envoyer !' id="submit")
+  .container
       - each tweet in tweets
         h4.pied #{tweet.pseudo} a posté :
         .tweet
